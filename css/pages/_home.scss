@@ -1,0 +1,107 @@
+
+.header {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+}
+
+.menu {
+    display: none;
+}
+
+.navigation {
+    display: flex;
+    padding-left: 1.6rem;
+    
+    &__menu-link {
+        align-self:flex-end;
+        padding-right: 1.6rem;
+
+        &:not(:first-child) {
+            padding-left: 1.6rem;
+        }
+    }
+}
+
+.darktheme {
+    margin-left: auto;
+
+    &__moon-outline {
+        justify-self: end;
+    }
+
+    &__moon-filled {
+        display: none;
+        justify-self: end;
+    }
+
+    &:hover &__moon-outline{
+        justify-self: end;
+            cursor: pointer;
+            display: none;
+            transition: 2s;
+    }
+    
+    &:hover &__moon-filled {
+            justify-self: end;
+            display: inline-block;
+            cursor: pointer;
+            background-color: black;
+            color: rgb(212, 193, 143);
+            transition: 2s;
+            box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.2);
+        }
+}
+
+.headline {
+    display: block;
+    height: 85vh;
+    align-content: center;
+    margin: auto;
+
+    &__text {
+        h1 {
+            width: fit-content;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        p {
+            position: absolute;
+            top: 62%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            margin-top: 2.4rem;
+        }
+    } 
+}
+
+@media (max-width: 600px) {
+    .navigation {
+        display: none;
+    }
+
+    .menu {
+        display: block;
+        align-self: center;
+        padding-left: 1.2rem;
+    }
+
+    .headline__text{
+
+        h1 {
+            width: auto;
+            font-size: clamp(13rem, 20vw, 18rem);
+        }
+        
+        p {
+            top:auto;
+            bottom: 5%;
+            transform: translate(-50%, -50%);
+            font-size: clamp(1.6rem, 2.5vw, 3rem);
+            background-color: transparent;
+        }
+    }
+
+}

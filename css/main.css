@@ -1,0 +1,328 @@
+@charset "UTF-8";
+/**
+ * @license
+ *
+ * Font Family: Satoshi
+ * Designed by: Deni Anggara
+ * URL: https://www.fontshare.com/fonts/satoshi
+ * © 2022 Indian Type Foundry
+ *
+ * Font Styles:
+ * Satoshi Variable(Variable font)
+ * Satoshi Variable Italic(Variable font)
+ * Satoshi Light
+ * Satoshi Light Italic
+ * Satoshi Regular
+ * Satoshi Italic
+ * Satoshi Medium
+ * Satoshi Medium Italic
+ * Satoshi Bold
+ * Satoshi Bold Italic
+ * Satoshi Black
+ * Satoshi Black Italic
+ *
+*/
+/**
+* This is a variable font
+* You can controll variable axes as shown below:
+* font-variation-settings: 'wght' 900.0;
+*
+* available axes:
+
+* 'wght' (range from 300.0 to 900.0)
+
+*/
+@font-face {
+  font-family: 'Satoshi-Variable';
+  src: url("../fonts/Satoshi-Variable.woff2") format("woff2"), url("../fonts/Satoshi-Variable.woff") format("woff"), url("../fonts/Satoshi-Variable.ttf") format("truetype");
+  font-weight: 300 900;
+  font-display: swap;
+  font-style: normal;
+}
+
+/**
+* This is a variable font
+* You can controll variable axes as shown below:
+* font-variation-settings: 'wght' 900.0;
+*
+* available axes:
+
+* 'wght' (range from 300.0 to 900.0)
+
+*/
+@font-face {
+  font-family: 'Satoshi-VariableItalic';
+  src: url("../fonts/Satoshi-VariableItalic.woff2") format("woff2"), url("../fonts/Satoshi-VariableItalic.woff") format("woff"), url("../fonts/Satoshi-VariableItalic.ttf") format("truetype");
+  font-weight: 300 900;
+  font-display: swap;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Satoshi-Light';
+  src: url("../fonts/Satoshi-Light.woff2") format("woff2"), url("../fonts/Satoshi-Light.woff") format("woff"), url("../fonts/Satoshi-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Satoshi-LightItalic';
+  src: url("../fonts/Satoshi-LightItalic.woff2") format("woff2"), url("../fonts/Satoshi-LightItalic.woff") format("woff"), url("../fonts/Satoshi-LightItalic.ttf") format("truetype");
+  font-weight: 300;
+  font-display: swap;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Satoshi-Regular';
+  src: url("../fonts/Satoshi-Regular.woff2") format("woff2"), url("../fonts/Satoshi-Regular.woff") format("woff"), url("../fonts/Satoshi-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Satoshi-Italic';
+  src: url("../fonts/Satoshi-Italic.woff2") format("woff2"), url("../fonts/Satoshi-Italic.woff") format("woff"), url("../fonts/Satoshi-Italic.ttf") format("truetype");
+  font-weight: 400;
+  font-display: swap;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Satoshi-Medium';
+  src: url("../fonts/Satoshi-Medium.woff2") format("woff2"), url("../fonts/Satoshi-Medium.woff") format("woff"), url("../fonts/Satoshi-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Satoshi-MediumItalic';
+  src: url("../fonts/Satoshi-MediumItalic.woff2") format("woff2"), url("../fonts/Satoshi-MediumItalic.woff") format("woff"), url("../fonts/Satoshi-MediumItalic.ttf") format("truetype");
+  font-weight: 500;
+  font-display: swap;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Satoshi-Bold';
+  src: url("../fonts/Satoshi-Bold.woff2") format("woff2"), url("../fonts/Satoshi-Bold.woff") format("woff"), url("../fonts/Satoshi-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Satoshi-BoldItalic';
+  src: url("../fonts/Satoshi-BoldItalic.woff2") format("woff2"), url("../fonts/Satoshi-BoldItalic.woff") format("woff"), url("../fonts/Satoshi-BoldItalic.ttf") format("truetype");
+  font-weight: 700;
+  font-display: swap;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Satoshi-Black';
+  src: url("../fonts/Satoshi-Black.woff2") format("woff2"), url("../fonts/Satoshi-Black.woff") format("woff"), url("../fonts/Satoshi-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Satoshi-BlackItalic';
+  src: url("../fonts/Satoshi-BlackItalic.woff2") format("woff2"), url("../fonts/Satoshi-BlackItalic.woff") format("woff"), url("../fonts/Satoshi-BlackItalic.ttf") format("truetype");
+  font-weight: 900;
+  font-display: swap;
+  font-style: italic;
+}
+
+.header {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(80px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+}
+
+.menu {
+  display: none;
+}
+
+.navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 1.6rem;
+}
+
+.navigation__menu-link {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  padding-right: 1.6rem;
+}
+
+.navigation__menu-link:not(:first-child) {
+  padding-left: 1.6rem;
+}
+
+.darktheme {
+  margin-left: auto;
+}
+
+.darktheme__moon-outline {
+  -ms-grid-column-align: end;
+      justify-self: end;
+}
+
+.darktheme__moon-filled {
+  display: none;
+  -ms-grid-column-align: end;
+      justify-self: end;
+}
+
+.darktheme:hover .darktheme__moon-outline {
+  -ms-grid-column-align: end;
+      justify-self: end;
+  cursor: pointer;
+  display: none;
+  -webkit-transition: 2s;
+  transition: 2s;
+}
+
+.darktheme:hover .darktheme__moon-filled {
+  -ms-grid-column-align: end;
+      justify-self: end;
+  display: inline-block;
+  cursor: pointer;
+  background-color: black;
+  color: #d4c18f;
+  -webkit-transition: 2s;
+  transition: 2s;
+  -webkit-box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.2);
+}
+
+.headline {
+  display: block;
+  height: 85vh;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  margin: auto;
+}
+
+.headline__text h1 {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.headline__text p {
+  position: absolute;
+  top: 62%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  margin-top: 2.4rem;
+}
+
+@media (max-width: 600px) {
+  .navigation {
+    display: none;
+  }
+  .menu {
+    display: block;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    padding-left: 1.2rem;
+  }
+  .headline__text h1 {
+    width: auto;
+    font-size: clamp(13rem, 20vw, 18rem);
+  }
+  .headline__text p {
+    top: auto;
+    bottom: 5%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    font-size: clamp(1.6rem, 2.5vw, 3rem);
+    background-color: transparent;
+  }
+}
+
+h1 {
+  font-size: clamp(11rem, 20vw, 14rem);
+  line-height: 1;
+  text-align: center;
+  margin: 0;
+}
+
+h2 {
+  font-size: 10rem;
+  margin: 0;
+}
+
+h3 {
+  font-size: 8rem;
+  margin: 0;
+}
+
+h4 {
+  font-size: 6rem;
+  margin: 0;
+}
+
+h5 {
+  font-weight: 500;
+  font-size: 3rem;
+  margin: 0;
+}
+
+p {
+  font-size: clamp(1.2rem, 3vw, 2rem);
+  margin: 0;
+}
+
+a {
+  font-size: clamp(1.8rem, 3.4vw, 2.4rem);
+  color: black;
+  margin: 0;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+  -webkit-text-decoration-style: 2px solid black;
+          text-decoration-style: 2px solid black;
+}
+
+li {
+  list-style: none;
+}
+
+.border-light {
+  border: 2px solid black;
+  border-radius: 1rem;
+  padding: 0.6rem;
+}
+
+* {
+  background-color: #e9e7d9;
+  font-size: 0.625rem;
+  font-family: 'Satoshi';
+}
+
+.wrapper {
+  margin: auto;
+  padding: 2.4rem;
+  max-width: 800px;
+  text-align: center;
+  vertical-align: center;
+}
+/*# sourceMappingURL=main.css.map */
